@@ -58,6 +58,12 @@
 		B6A81CCB2306AE85003DA2E2 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E28BAE3318F99C810095C089 /* GCDWebServerStreamedResponse.m */; };
 		B6A81CCC2306AE89003DA2E2 /* GCDWebDAVServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A0E80918F3432600C580B1 /* GCDWebDAVServer.m */; };
 		B6A81CCD2306AE8E003DA2E2 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE850918E77ECA0061360B /* GCDWebUploader.m */; };
+		B6A81CDB230BDDE8003DA2E2 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2BE850718E77ECA0061360B /* GCDWebUploader.bundle */; };
+		B6A81CDC230BE11C003DA2E2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A81CD8230BC102003DA2E2 /* libz.tbd */; };
+		B6A81CDD230BE120003DA2E2 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A81CD6230BC0FE003DA2E2 /* libxml2.tbd */; };
+		B6A81CDE230BE125003DA2E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A81CD0230BC0C5003DA2E2 /* UIKit.framework */; };
+		B6A81CDF230BE12C003DA2E2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A81CD2230BC0CB003DA2E2 /* MobileCoreServices.framework */; };
+		B6A81CE0230BE131003DA2E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A81CD4230BC0DC003DA2E2 /* CFNetwork.framework */; };
 		CEE28CF41AE0051F00F4023C /* GCDWebServers.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE28CF31AE0051F00F4023C /* GCDWebServers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE28D091AE006C200F4023C /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BAE1618F99C810095C089 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE28D0A1AE006C300F4023C /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E28BAE1618F99C810095C089 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -342,6 +348,11 @@
 /* Begin PBXFileReference section */
 		8DD76FB20486AB0100D96B5E /* GCDWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GCDWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A81C962306AD10003DA2E2 /* libGCDWebServers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCDWebServers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A81CD0230BC0C5003DA2E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6A81CD2230BC0CB003DA2E2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B6A81CD4230BC0DC003DA2E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B6A81CD6230BC0FE003DA2E2 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
+		B6A81CD8230BC102003DA2E2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		CEE28CD11AE004D800F4023C /* GCDWebServers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE28CEF1AE0051F00F4023C /* GCDWebServers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE28CF21AE0051F00F4023C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -432,6 +443,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A81CE0230BE131003DA2E2 /* CFNetwork.framework in Frameworks */,
+				B6A81CDF230BE12C003DA2E2 /* MobileCoreServices.framework in Frameworks */,
+				B6A81CDE230BE125003DA2E2 /* UIKit.framework in Frameworks */,
+				B6A81CDD230BE120003DA2E2 /* libxml2.tbd in Frameworks */,
+				B6A81CDC230BE11C003DA2E2 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +553,11 @@
 		CEE28D081AE0053E00F4023C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6A81CD8230BC102003DA2E2 /* libz.tbd */,
+				B6A81CD6230BC0FE003DA2E2 /* libxml2.tbd */,
+				B6A81CD4230BC0DC003DA2E2 /* CFNetwork.framework */,
+				B6A81CD2230BC0CB003DA2E2 /* MobileCoreServices.framework */,
+				B6A81CD0230BC0C5003DA2E2 /* UIKit.framework */,
 				E24A3C4021E2940600C58878 /* module.modulemap */,
 				CEE28CF31AE0051F00F4023C /* GCDWebServers.h */,
 				CEE28CF21AE0051F00F4023C /* Info.plist */,
@@ -797,6 +818,7 @@
 				B6A81C922306AD10003DA2E2 /* Sources */,
 				B6A81C932306AD10003DA2E2 /* Frameworks */,
 				B6A81C942306AD10003DA2E2 /* CopyFiles */,
+				B6A81CDA230BDDDE003DA2E2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -980,6 +1002,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B6A81CDA230BDDDE003DA2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A81CDB230BDDE8003DA2E2 /* GCDWebUploader.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE28CCF1AE004D800F4023C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1367,24 +1397,21 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1426,10 +1453,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1437,8 +1465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1484,6 +1511,7 @@
 		CEE28D031AE0052000F4023C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1502,6 +1530,7 @@
 		CEE28D041AE0052000F4023C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
