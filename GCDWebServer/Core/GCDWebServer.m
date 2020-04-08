@@ -828,7 +828,10 @@ static inline NSString* _EncodeBase64(NSString* string) {
   NSMutableDictionary* options = [NSMutableDictionary dictionary];
   [options setObject:[NSNumber numberWithInteger:port] forKey:GCDWebServerOption_Port];
   [options setValue:name forKey:GCDWebServerOption_BonjourName];
-  return [self startWithOptions:options error:NULL];
+  NSError *error;
+  BOOL val = [self startWithOptions:options error:&error];
+  NSLog(@"start server ok? %d, error:%@", val, error);
+  return val;
 }
 
 #if !TARGET_OS_IPHONE
